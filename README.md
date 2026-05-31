@@ -81,6 +81,9 @@ sudo make altinstall
 ```
 python3 --version
 ```
+6. Remove folder Python 3.9.7
+   cd ~
+   rm -r Python-3.9.7
 
 
 
@@ -93,6 +96,7 @@ These steps are taken from the [official OctoPrint community](community.octoprin
 sudo apt update
 sudo apt install python3-pip python3-dev python3-setuptools python3-venv git libyaml-dev build-essential
 sudo apt install git libyaml-dev build-essential
+pip install --upgrade pip setuptools
 ```
 
 2. Create the environment needed to install OctoPrint. Create a directory and a Python virtualenv.
@@ -106,6 +110,7 @@ source venv/bin/activate
 3. Upgrade `pip` manager.
 ```
 pip install pip --upgrade
+pip install --upgrade pip setuptools wheel
 ```
 
 4. Install OctoPrint (`--no-cache-dir` is needed to ensure the downloading of the last OctoPrint version).
