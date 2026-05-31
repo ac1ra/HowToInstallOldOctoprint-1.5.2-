@@ -1,4 +1,4 @@
-# How to install OctoPrint on OrangePi PC #
+# How to install OctoPrint older version (1.5.2) on OrangePi PC #
 
 ## 1. Choose an OS ##
 ### 1a. Armbian ###
