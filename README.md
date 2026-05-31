@@ -53,13 +53,13 @@ sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-
 
 2. Download the sources from the official site (ftp mirror). Look for the last version and download the `*.tar.xz` package. Then extract it.
 ```
-curl -O https://www.python.org/ftp/python/X.Y.Z/Python-X.Y.Z.tar.xz
-tar -xf Python-X.Y.Z.tar.xz
+curl -O https://www.python.org/ftp/python/3.9.7/Python-3.9.7.tar.xz
+tar -xf Python-3.9.7.tar.xz
 ```
 
 3. Compile the sources.
 ```
-cd Python-X.Y.Z
+cd Python-3.9.7
 ./configure --enable-optimizations
 make -j $(nproc)
 ```
@@ -110,7 +110,7 @@ pip install pip --upgrade
 
 4. Install OctoPrint (`--no-cache-dir` is needed to ensure the downloading of the last OctoPrint version).
 ```
-pip install --no-cache-dir octoprint
+pip install --no-cache-dir octoprint==1.5.2
 ```
 
 5. It is a good thing now to reboot your system.
